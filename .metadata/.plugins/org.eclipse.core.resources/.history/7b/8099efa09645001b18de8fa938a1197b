@@ -1,0 +1,21 @@
+package Oopsconcepts;
+
+public class Functions {
+ String Gf="Radha";
+ int age=24;
+	public static void main(String[] args) {
+	
+     }
+	//Non-Static functions
+	
+	public void house() {
+		
+		
+		
+		
+	}
+	
+	
+	
+
+}

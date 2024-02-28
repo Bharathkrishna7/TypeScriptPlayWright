@@ -1,0 +1,70 @@
+package guru99;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Day3 {
+static WebDriver driver;
+static String s=System.setProperty("webdriver.chrome.driver","C:\\Users\\Gowtham Krishna\\Desktop\\Brow"
+	+ "ser drivers\\chromedriver_win32\\chromedriver.exe");
+			 
+	    public static  WebDriver browser(String s) {
+			 return driver;
+		}
+
+	public static void main(String[] args) throws InterruptedException {
+		
+		//InValid Uid & Valid pass
+		
+	  driver=new ChromeDriver();
+		 driver.get("http://www.demo.guru99.com/V4/");
+		 driver.manage().window().maximize();
+		 driver.manage().deleteAllCookies();
+		 driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+		 driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
+		 
+		 driver.findElement(By.name("uid")).sendKeys("mngr3523");
+		 driver.findElement(By.name("password")).sendKeys("mujazyt");
+		 driver.findElement(By.name("btnLogin")).click();
+		 Alert a=driver.switchTo().alert();
+		 System.out.println(a.getText());
+		 Thread.sleep(3000);
+		 a.accept();
+		 Thread.sleep(2000);
+		 driver.close();
+		
+		 //Valid Uid & InValid pass
+		 
+		 driver=new ChromeDriver();
+		 driver.get("http://www.demo.guru99.com/V4/");
+		 driver.findElement(By.name("uid")).sendKeys("mngr352382");
+		 driver.findElement(By.name("password")).sendKeys("mujat");
+		 driver.findElement(By.name("btnLogin")).click();
+		 Alert al=driver.switchTo().alert();
+		 System.out.println(al.getText());
+		 Thread.sleep(3000);
+		 al.accept();
+		 Thread.sleep(2000);
+		 driver.close();
+		 
+		 //InValid uid & InValid pass
+		 
+		 driver=new ChromeDriver();
+		 driver.get("http://www.demo.guru99.com/V4/");
+		 driver.findElement(By.name("uid")).sendKeys("mng2382");
+		 driver.findElement(By.name("password")).sendKeys("mujatmhjfjy");
+		 driver.findElement(By.name("btnLogin")).click();
+		 Alert alert=driver.switchTo().alert();
+		 System.out.println(alert.getText());
+		 Thread.sleep(3000);
+		 alert.accept();
+		 Thread.sleep(5000);
+		 driver.close();
+		
+	}
+
+}

@@ -1,0 +1,43 @@
+package Oopsconcepts;
+
+public class Functions {
+
+	public static void main(String[] args) {
+	
+		Functions f=new Functions();
+		String a=f.girldetails();
+		String b=f.place();
+		String c=f.country();
+		System.out.println(a);
+		System.out.println(b);
+		System.out.println(c);
+     }
+	
+	/* there are 3 types of functions/methods
+	 1. no input and  no output
+	 2. no input passing but getting some output
+	 3.passing some input and getting some output
+	 */
+
+	//here we r dealing with Non-Static functions
+	public String girldetails() {
+	
+		 String Gf="Radha";
+		 //int age=24;
+		return Gf; 
+	}
+	
+	public String place() {
+		
+		String p="avissawella ";
+		//String home="don'tknow";
+		return p;
+		//return home;
+	}
+	public String country() {
+		
+		String c="Sri lanka";
+		return c;
+	}
+	
+}

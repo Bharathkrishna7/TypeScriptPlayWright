@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;FibonacciSeries.java&apos; to &apos;JavaBasics/src/basicLevel&apos;&#x0D;&#x0A;- Original project: &apos;Corejava&apos;&#x0D;&#x0A;- Destination element: &apos;JavaBasics/src/basicLevel&apos;&#x0D;&#x0A;- Original element: &apos;interviewQuestions.FibonacciSeries.java&apos;" description="Copy compilation unit" destination="=JavaBasics/src&lt;basicLevel" element1="/src&lt;interviewQuestions{FibonacciSeries.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1648011381377" units="1" version="1.0"/>
+</session>

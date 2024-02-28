@@ -1,0 +1,20 @@
+package seleniumPractice;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class CustomizedORDynamicXpath {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\Gowtham Krishna\\Desktop\\Browser drivers\\chromedriver_win32\\chromedriver.exe");
+
+		WebDriver driver = new ChromeDriver();
+		//driver.findElement(By.xpath("//div[contains(@data-testid,'home-page-flight-cta')]")).click();
+driver.findElement(By.xpath("//div[contains(@class,'css-1dbjc4n r-1awozwy r-z2wwpe r-1loqt21 r-18u37iz r-1777fci r-1g94qm0 r-d9"
+		+ "fdf6 r-1w50u8q r-ah5dr5 r-1otgn73')]")).click();	
+	}
+	
+
+}

@@ -1,0 +1,9 @@
+package seleniumPractice;
+
+public class CustomizedORDynamicXpath {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

@@ -1,0 +1,32 @@
+package Oopsconcepts;
+
+public class Functions {
+
+	public static void main(String[] args) {
+	
+     }
+	//Non-Static functions
+	
+	public int girldetails() {
+	
+		 String Gf="Radha";
+		 int age=24;
+		
+		return age;
+	}
+	
+	public void place() {
+		
+		String p="avissawella ";
+		String home="don'tknow";
+	}
+	public void country() {
+		
+		String c="Sri lanka";
+		
+	}
+	
+	
+	
+
+}

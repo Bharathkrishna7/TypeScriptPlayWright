@@ -1,0 +1,48 @@
+package Simplejavapro;
+
+public class Conditions {
+
+	public static void main(String[] args) {
+        //if & else if conditions
+		int h=42;
+		int f=70;
+		if(h>f) {
+			System.out.println("print h is greater");
+		}
+		else {
+			System.out.println("print f is greater");
+		}
+		int s=80;
+		int t=60;
+		if(t>s){
+			System.out.println("t is greater value "+ t);
+		}
+		else {
+			System.out.println("s is greater "+s);
+		}
+       int a=2456;
+       int b=422;
+       int d=61;
+        if(a>b & a>d) {
+        	System.out.println("then a is greater");
+        }
+        else if(b>d) {
+        	System.out.println("then b is greater value");
+        }
+        else {
+        	System.out.println(" then  d is greater value");
+        }
+        System.out.println("====================");
+        
+        String n1="bharath";
+        String n2="krishna";
+        
+        
+        
+        
+	}
+
+}
+
+
+

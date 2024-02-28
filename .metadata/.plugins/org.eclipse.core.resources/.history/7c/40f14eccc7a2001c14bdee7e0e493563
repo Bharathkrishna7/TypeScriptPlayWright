@@ -1,0 +1,49 @@
+package Oopsconcepts;
+
+/*==>Constructor is also a type of method. but it don't return any value
+  ==>Constructor name is similar to class name.
+ */
+public class Constructor {
+
+	String s;
+	int i;
+
+	// Duplicate constructors are not allowed. just like method overloading
+	// u can create constructor with 0 arugs 1&2 arug list
+	// mainly constructor's are created to use class variables multiple times by creating objects..
+	public Constructor(String s, int i) {
+		this.s = s; // "This" keyword says that, this 'class variables'=this 'local constructor variables'..
+		this.i = i;
+	}
+
+	public Constructor(int in) {
+		i = in;// No need to use 'this' keyword when class variable is not similar to 'local
+				// constructor variable'..
+    }
+	
+	public Constructor(int inn , String st) {
+	     i=inn;
+		 s=st;
+	}
+
+	public static void main(String[] args) {
+
+		Constructor ob = new Constructor("bharath", 26); // whenever the object is created constructor called directly
+		System.out.println(ob.s);
+		System.out.println(ob.i);
+
+		Constructor ob1 = new Constructor(32);
+		System.out.println(ob1.i);
+		
+		Constructor ob2 = new Constructor(22,"krishna");
+		System.out.println(ob2.i);
+		System.out.println(ob2.s);
+		
+		Constructor ob3 = new Constructor("radha",24);
+		System.out.println(ob3.s);
+		System.out.println(ob3.i);
+		
+
+	}
+
+}
